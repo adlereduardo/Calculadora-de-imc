@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/wallpapersden.com_minimal-hd-landscape_1920x1080.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+header {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 60px 0px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.imc-calculator {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0,1);
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 40px);
+    outline: none;
+}
+
+button {
+    background: #00ffbf;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-input-placeholder{
+    color: black;
+}
+
+button:hover {
+    background-color: #ffff;
+    color: #00ffbf;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    bottom: 0;
+    color: white;
+}
+
+#imcResult {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imc-normal {
+    color: green;
+}
+
+.imc-sobrepeso {
+    color: orange;
+}
+
+.imc-obesidade {
+    color: red;
+}
+
+.imc-normal, .imc-obesidade, .imc-sobrepeso{
+    text-align: center;
+    margin-top: 20px;
+}
